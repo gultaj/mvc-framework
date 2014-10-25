@@ -1,3 +1,5 @@
 <?php  
 
-require_once "../framework/autoload.php";
+require_once "../app/autoload.php";
+
+$app = new Application;
