@@ -4,6 +4,6 @@ class ContactController extends Controller
 {
 	public function actionIndex()
 	{
-		echo 'contact/index';
+		$this->view('contact/index');
 	}
 }

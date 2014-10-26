@@ -6,6 +6,11 @@ class HomeController extends Controller
 
 	public function actionIndex($name = '')
 	{
-		echo $name;
+		$user = $this->model('User');
+		$user->name = $name;
+
+		$this->view('home/index', [
+			'name' => $user->name,
+		]);
 	}
 }
